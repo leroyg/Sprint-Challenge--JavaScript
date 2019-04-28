@@ -5,12 +5,42 @@
   Use this pattern to create your objects: 
   object name, diet, weight, length, period
 */
-
+class Dinosaur {
+    constructor(attribute) {
+        this.name = attribute.name;
+        this.diet = attribute.diet;
+        this.weight = attribute.weight;
+        this.length = attribute.length;
+        this.period = attribute.period;
+    };
+}
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
-
+const trex = new Dinosaur({
+    name: 'tyrannosaurus',
+    diet: `carnivorous`,
+    weight: `7000kg`,
+    length: `12m`,
+    period: `Late Cretaceous`,
+});
+console.log(trex);
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-
+const stego = new Dinosaur({
+    name:`stegosaurus`, 
+    diet:`herbivorous`, 
+    weight:`2000kg`, 
+    length:`9m`, 
+    period:`Late Jurrasic`,
+});
+console.log(stego);
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
+const velo = new Dinosaur({
+    name: `velociraptor`, 
+    diet: `carnivorous`, 
+    weight: `15kg`, 
+    length: `1.8m`, 
+    period:`Late Cretaceous`,
+});
+console.log(velo);
 
 // Using your dinosaur objects, log answers to these questions:
 
