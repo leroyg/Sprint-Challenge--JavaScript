@@ -92,11 +92,15 @@ console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
+
 The resulting contact information should have a space between the first name and the email information like this: 
 Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+for (let i = 0; i < graduates.length; i++) {
+    contactInfo[i] = (graduates[i].first_name + ` ` +graduates[i].email);
+};
 console.log(contactInfo);
 
 
