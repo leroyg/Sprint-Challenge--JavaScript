@@ -56,7 +56,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+Due to the two pass compilier - on the first pass, it will hoist internal as it moves through the code, because nestedFunction is within the lexical scope of myFunction, it will have access to internal even though it is after it in the code on the second pass.
 
 const external = "I'm outside the function";
 
