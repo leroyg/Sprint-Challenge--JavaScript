@@ -28,15 +28,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between `.forEach` & `.map`. .forEach doesn't return anything, .map does. 
 
-2. What is the difference between a function and a method?
+2. What is the difference between a function and a method? A method is a function that is a property of an object. Their respective scopes are different, the method is not globally scoped. 
 
-3. What is closure?
+3. What is closure? Closure is the combination of the function and the lexical environment within which that function was declared. Closure determines the answer to 'What variables do I have access to?'
 
 4. Describe the four rules of the 'this' keyword.
-
-5. Why do we need super() in an extended class?
+1) Global Object Binding - the value of this - will be the window or consoel Object.
+2) Implicit Binding - whenever a function is called using dot notation the object before it is this.
+3) New binding - whenever a constructor is used, this refers to the instance of the object created by the constructor function.
+4) Explicit binding - whenever apply or call method is used, this is explicitley defined. Used to override a binding.
+5. Why do we need super() in an extended class? Super is a highway back to the parent class, which allows those access to those properties for a an object. 
 
 ## Project Set up
 
@@ -66,7 +69,7 @@ Your finished project must include all of the following requirements:
 
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
-* [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+* [X] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
