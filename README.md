@@ -28,9 +28,9 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`. .forEach doesn't return anything, .map does. 
+1. Describe the biggest difference between `.forEach` & `.map`. .forEach doesn't return anything, .map does. Map doesn't mutate the original array. For Each mutates the original array. 
 
-2. What is the difference between a function and a method? A method is a function that is a property of an object. Their respective scopes are different, the method is not globally scoped. 
+2. What is the difference between a function and a method? A method is a function that is a property of an object. Their respective scopes are different, the method is not globally scoped. Arrow functions have to be at the top bc they're not globally scoped. 
 
 3. What is closure? Closure is the combination of the function and the lexical environment within which that function was declared. Closure determines the answer to 'What variables do I have access to?'
 
@@ -39,7 +39,7 @@ Edit this document to include your answers after each question. Make sure to lea
 2) Implicit Binding - whenever a function is called using dot notation the object before it is this.
 3) New binding - whenever a constructor is used, this refers to the instance of the object created by the constructor function.
 4) Explicit binding - whenever apply or call method is used, this is explicitley defined. Used to override a binding.
-5. Why do we need super() in an extended class? Super is a highway back to the parent class, which allows those access to those properties for a an object. 
+5. Why do we need super() in an extended class? Super is a highway back to the parent class, which allows those access to those properties for a an object. Inherits all the attributes of the parent class.
 
 ## Project Set up
 

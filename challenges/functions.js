@@ -24,12 +24,12 @@ doThisThing(1, 4, (thing) => {
  function consume(x, y, cb) {
      return cb(x + y);
  }
- consume(2, 3, (add) => {
-    console.log(add)
+ consume(2, 3, (addition) => {
+    console.log(addition)
 });
 
-function multiplyNums(x, y, cb) {
-    return cb(x * y);
+function multiplyNums(x, y, consume) {
+    return consume(x * y);
     // multiplyNums multiplies two numbers and passes the result to the callback.
 }
 
@@ -37,8 +37,8 @@ multiplyNums(2, 99, (product) => {
     console.log(product);
 });
 
-function greeting(firstname, lastname, cb) {
-    return cb(`Hello ${firstname} ${lastname}, nice to meet you!`);
+function greeting(firstname, lastname, consume) {
+    return consume(`Hello ${firstname} ${lastname}, nice to meet you!`);
 };
 
 greeting(`Mary`, `Frayer`, (greet) =>{
@@ -46,9 +46,9 @@ greeting(`Mary`, `Frayer`, (greet) =>{
 });
 // Step 3: Check your work by un-commenting the following calls to consume(): 
 
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+// consume(2,2,add); // 4
+// consume(10,16,multiply); // 160
+// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -56,7 +56,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-Due to the two pass compilier - on the first pass, it will hoist internal as it moves through the code, because nestedFunction is within the lexical scope of myFunction, it will have access to internal even though it is after it in the code on the second pass.
+`Due to the two pass compilier - on the first pass, it will hoist internal as it moves through the code, because nestedFunction is within the lexical scope of myFunction, it will have access to internal even though it is after it in the code on the second pass.`
 
 const external = "I'm outside the function";
 

@@ -252,11 +252,11 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 */
 
 const lowerCase = [];
-let noCaps = [zooAnimals.map((name, index, data) => {
+let noCaps = zooAnimals.map((name, index, data) => {
     return {
         'name': name.animal_name.toLowerCase()
     };
-})];
+});
 console.log(noCaps);
 
 /* Request 3: .filter() 
